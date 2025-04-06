@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AY - My Personal Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>بسم‌الله‌الرحمن‌الرحیم</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button onclick="switchLanguage('en')">EN</button>
+                    <button onclick="switchLanguage('fa')">فارسی</button>
+                </div>
+                <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hi! I'm Amirhossein Yavari, passionate about network, programming, Linux, and a bit of football and sports. I share my experiences and learnings here.</p>
+            </div>
+        </section>
+        <section id="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <article>
+                    <h3>Introduction to Programming</h3>
+                    <p>Programming is the process of creating software through coding. It involves writing instructions that computers can execute. A good programmer understands logic, problem-solving, and the ability to write clean, efficient code.</p>
+                    <a href="post1.html" class="read-more">Read more</a>
+                </article>
+                <article>
+                    <h3>Introduction to Networking</h3>
+                    <p>Networking is the backbone of modern communication. It involves connecting computers and other devices to share resources and information. Understanding networking protocols and security is crucial for building robust systems.</p>
+                    <a href="post2.html" class="read-more">Read more</a>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you have any questions, feel free to reach out via email:</p>
+                <ul>
+                    <li>Email: <a href="mailto:amirhosseinyavari61@gmail.com">amirhosseinyavari61@gmail.com</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AY. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
