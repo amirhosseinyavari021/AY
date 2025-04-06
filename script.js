@@ -1,15 +1,20 @@
-// Toggle theme (day/night mode)
+// Language toggle
+const languageToggle = document.getElementById('language-toggle');
+languageToggle.addEventListener('click', () => {
+    const langEn = document.querySelectorAll('.lang-en');
+    const langFa = document.querySelectorAll('.lang-fa');
+
+    langEn.forEach(element => {
+        element.style.display = element.style.display === 'none' ? 'block' : 'none';
+    });
+
+    langFa.forEach(element => {
+        element.style.display = element.style.display === 'none' ? 'block' : 'none';
+    });
+});
+
+// Theme toggle
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-});
-
-// Toggle language (English/Farsi)
-const langToggle = document.getElementById('lang-toggle');
-langToggle.addEventListener('click', () => {
-    const elements = document.querySelectorAll('.lang');
-    elements.forEach((element) => {
-        element.classList.toggle('lang-en');
-        element.classList.toggle('lang-fa');
-    });
 });
