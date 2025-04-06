@@ -1,19 +1,11 @@
-// Language toggle
+// Language toggle functionality
 const languageToggle = document.getElementById('language-toggle');
 languageToggle.addEventListener('click', () => {
-    const langEn = document.querySelectorAll('.lang-en');
-    const langFa = document.querySelectorAll('.lang-fa');
-
-    langEn.forEach(element => {
-        element.style.display = element.style.display === 'none' ? 'block' : 'none';
-    });
-
-    langFa.forEach(element => {
-        element.style.display = element.style.display === 'none' ? 'block' : 'none';
-    });
+    document.body.classList.toggle('lang-en');
+    document.body.classList.toggle('lang-fa');
 });
 
-// Theme toggle
+// Theme toggle functionality
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
