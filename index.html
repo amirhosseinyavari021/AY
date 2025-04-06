@@ -3,55 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog - AY</title>
+    <title>My Personal Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 id="site-title">AY</h1>
+            <h1 id="site-title">My Personal Blog</h1>
             <nav>
                 <ul>
-                    <li><a href="#about" class="nav-link">About Me</a></li>
-                    <li><a href="#blog" class="nav-link">Blog</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="javascript:void(0);" id="theme-toggle" class="nav-link">Toggle Theme</a></li>
-                    <li><a href="javascript:void(0);" id="lang-toggle" class="nav-link">EN/FA</a></li>
+                    <li><a href="#about" class="lang-toggle" data-lang="about">About Me</a></li>
+                    <li><a href="#blog" class="lang-toggle" data-lang="blog">Blog</a></li>
+                    <li><a href="#contact" class="lang-toggle" data-lang="contact">Contact</a></li>
                 </ul>
             </nav>
+            <button id="language-toggle">EN/FA</button>
+            <button id="theme-toggle">Toggle Theme</button>
         </div>
     </header>
 
     <main>
         <section id="about">
             <div class="container">
-                <h2>About Me</h2>
-                <p>Hello! I’m Amirhossein Yavari. I am passionate about technology, programming, cybersecurity, and Linux. I also have a bit of interest in football and sports. Here, I share my experiences and learning with you.</p>
+                <h2 class="lang-en">About Me</h2>
+                <h2 class="lang-fa">درباره من</h2>
+                <p class="lang-en">Hi! I'm Amirhossein, interested in technology, cybersecurity, Linux, programming, and football. I share my experiences and learnings here.</p>
+                <p class="lang-fa">سلام! من امیرحسین هستم. به فناوری، امنیت سایبری، لینوکس، برنامه‌نویسی و فوتبال علاقه دارم. تجربیات و یادگیری‌هایم را اینجا به اشتراک می‌گذارم.</p>
             </div>
         </section>
 
         <section id="blog">
             <div class="container">
-                <h2>Blog</h2>
+                <h2 class="lang-en">Blog</h2>
+                <h2 class="lang-fa">وبلاگ</h2>
                 <article>
-                    <h3>Introduction to Programming</h3>
-                    <p>In this post, I will discuss the basics of programming, including its importance, history, and how to get started with various programming languages.</p>
-                    <a href="post1.html" class="read-more">Read more</a>
+                    <h3 class="lang-en">Post Title 1</h3>
+                    <h3 class="lang-fa">عنوان پست اول</h3>
+                    <p class="lang-en">This is the content of the first post.</p>
+                    <p class="lang-fa">محتوای پست اول.</p>
                 </article>
                 <article>
-                    <h3>Networking Basics</h3>
-                    <p>In this post, we will explore the fundamentals of computer networking, from understanding IP addresses to setting up a basic network.</p>
-                    <a href="post2.html" class="read-more">Read more</a>
+                    <h3 class="lang-en">Post Title 2</h3>
+                    <h3 class="lang-fa">عنوان پست دوم</h3>
+                    <p class="lang-en">This is the content of the second post.</p>
+                    <p class="lang-fa">محتوای پست دوم.</p>
                 </article>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
-                <h2>Contact Me</h2>
-                <p>If you have any questions, feel free to reach out to me:</p>
+                <h2 class="lang-en">Contact Me</h2>
+                <h2 class="lang-fa">تماس با من</h2>
+                <p class="lang-en">You can reach me at:</p>
+                <p class="lang-fa">شما می‌توانید با من از طریق ایمیل زیر تماس بگیرید:</p>
                 <ul>
-                    <li>Email: <a href="mailto:amirhosseinyavari61@gmail.com">amirhosseinyavari61@gmail.com</a></li>
+                    <li class="lang-en">Email: amirhosseinyavari61@gmail.com</li>
+                    <li class="lang-fa">ایمیل: amirhosseinyavari61@gmail.com</li>
                 </ul>
             </div>
         </section>
@@ -59,7 +67,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 AY. All rights reserved.</p>
+            <p class="lang-en">&copy; 2025 Amirhossein Yavari. All rights reserved.</p>
+            <p class="lang-fa">&copy; 2025 امیرحسین یاوری. تمام حقوق محفوظ است.</p>
         </div>
     </footer>
 
